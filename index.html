@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">Portfolio</a>
+            
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                    <li class="nav__item"><a href="#featured" class="nav__link">Featured</a></li>
+                    <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+                    <li class="nav__item"><a href="#quizzes" class="nav__link">Quizzes</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+                <div class="nav__close" id="nav-close">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <!-- Home Section -->
+        <section class="home section" id="home">
+            <div class="home__container container">
+                <div class="home__content">
+                    <div class="home__left reveal">
+                        <div class="home__img-bg">
+                            <img src="/assets/profile.png" alt="Profile Image" class="home__img">
+                        </div>
+                    </div>
+                    
+                    <div class="home__right reveal">
+                        <span class="home__greeting">Hello, I'm</span>
+                        <h1 class="home__name">Justine Pilapil</h1>
+                        <h3 class="home__profession">Web Developer</h3>
+                        <p class="home__description">
+                            Passionate about creating responsive and user-friendly web experiences
+                            with clean code and modern design principles.
+                        </p>
+                        <div class="home__buttons">
+                            <a href="#contact" class="button">Contact Me</a>
+                            <a href="#projects" class="button button--ghost">View Projects</a>
+                        </div>
+                        <div class="home__social">
+                            <a href="https://github.com/JSTNE30" target="_blank" class="home__social-link"><i class="fab fa-github"></i></a>
+                            <a href="#" class="home__social-link"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="home__social-link"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Projects Section -->
+        <section class="featured section" id="featured">
+            <div class="featured__container container">
+                <h2 class="section__title reveal">Featured Projects</h2>
+                <p class="section__description reveal">My best and most impactful work</p>
+                
+                <div class="featured__content">
+                    <article class="featured__card reveal">
+                        <div class="featured__image">
+                            <img src="https://via.placeholder.com/600x400" alt="Featured Project 1">
+                            <div class="featured__overlay">
+                                <div class="featured__data">
+                                    <h3 class="featured__title">E-commerce Platform</h3>
+                                    <p class="featured__description">A full-stack e-commerce solution with advanced features</p>
+                                    <div class="featured__buttons">
+                                        <a href="#" class="button button--small">Demo</a>
+                                        <a href="#" class="button button--small button--ghost">Code</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="featured__card reveal">
+                        <div class="featured__image">
+                            <img src="https://via.placeholder.com/600x400" alt="Featured Project 2">
+                            <div class="featured__overlay">
+                                <div class="featured__data">
+                                    <h3 class="featured__title">Dashboard UI</h3>
+                                    <p class="featured__description">Interactive analytics dashboard with real-time data visualization</p>
+                                    <div class="featured__buttons">
+                                        <a href="#" class="button button--small">Demo</a>
+                                        <a href="#" class="button button--small button--ghost">Code</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects section" id="projects">
+            <div class="projects__container container">
+                <h2 class="section__title reveal">All Projects</h2>
+                <p class="section__description reveal">Explore my complete portfolio of work</p>
+                
+                <div class="projects__content">
+                    <article class="projects__card reveal" data-category="web">
+                        <img src="https://via.placeholder.com/400x300" alt="Project 1" class="projects__img">
+                        <div class="projects__modal">
+                            <h3 class="projects__title">Personal Blog</h3>
+                            <p class="projects__description">Responsive blog site with content management system</p>
+                            <div class="projects__buttons">
+                                <a href="#" class="button button--small">Demo</a>
+                                <a href="#" class="button button--small button--ghost">Code</a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="projects__card reveal" data-category="app">
+                        <img src="https://via.placeholder.com/400x300" alt="Project 2" class="projects__img">
+                        <div class="projects__modal">
+                            <h3 class="projects__title">Task Manager</h3>
+                            <p class="projects__description">Productivity application with drag-and-drop interface</p>
+                            <div class="projects__buttons">
+                                <a href="#" class="button button--small">Demo</a>
+                                <a href="#" class="button button--small button--ghost">Code</a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="projects__card reveal" data-category="design">
+                        <img src="https://via.placeholder.com/400x300" alt="Project 3" class="projects__img">
+                        <div class="projects__modal">
+                            <h3 class="projects__title">UI Kit</h3>
+                            <p class="projects__description">Component library with custom design system</p>
+                            <div class="projects__buttons">
+                                <a href="#" class="button button--small">Demo</a>
+                                <a href="#" class="button button--small button--ghost">Code</a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="projects__card reveal" data-category="web">
+                        <img src="https://via.placeholder.com/400x300" alt="Project 4" class="projects__img">
+                        <div class="projects__modal">
+                            <h3 class="projects__title">Restaurant Website</h3>
+                            <p class="projects__description">Modern website with online reservation system</p>
+                            <div class="projects__buttons">
+                                <a href="#" class="button button--small">Demo</a>
+                                <a href="#" class="button button--small button--ghost">Code</a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="projects__card reveal" data-category="app">
+                        <img src="https://via.placeholder.com/400x300" alt="Project 5" class="projects__img">
+                        <div class="projects__modal">
+                            <h3 class="projects__title">Weather App</h3>
+                            <p class="projects__description">Weather forecasting application with geolocation</p>
+                            <div class="projects__buttons">
+                                <a href="#" class="button button--small">Demo</a>
+                                <a href="#" class="button button--small button--ghost">Code</a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="projects__card reveal" data-category="design">
+                        <img src="https://via.placeholder.com/400x300" alt="Project 6" class="projects__img">
+                        <div class="projects__modal">
+                            <h3 class="projects__title">Portfolio Template</h3>
+                            <p class="projects__description">Customizable portfolio template for developers</p>
+                            <div class="projects__buttons">
+                                <a href="#" class="button button--small">Demo</a>
+                                <a href="#" class="button button--small button--ghost">Code</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- School Quizzes Section -->
+        <section class="quizzes section" id="quizzes">
+            <div class="quizzes__container container">
+                <h2 class="section__title reveal">School Quizzes</h2>
+                <p class="section__description reveal">Quizzes, Pre-Test, and Post-Test</p>
+                
+                <div class="projects__content">
+                    <article class="projects__card reveal" data-category="web">
+                        <img src="https://via.placeholder.com/400x300" alt="Project 1" class="projects__img">
+                        <div class="projects__modal">
+                            <h3 class="projects__title">Personal Blog</h3>
+                            <p class="projects__description">Responsive blog site with content management system</p>
+                            <div class="projects__buttons">
+                                <a href="#" class="button button--small">Demo</a>
+                                <a href="#" class="button button--small button--ghost">Code</a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="projects__card reveal" data-category="app">
+                        <img src="https://via.placeholder.com/400x300" alt="Project 2" class="projects__img">
+                        <div class="projects__modal">
+                            <h3 class="projects__title">Task Manager</h3>
+                            <p class="projects__description">Productivity application with drag-and-drop interface</p>
+                            <div class="projects__buttons">
+                                <a href="#" class="button button--small">Demo</a>
+                                <a href="#" class="button button--small button--ghost">Code</a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="projects__card reveal" data-category="design">
+                        <img src="https://via.placeholder.com/400x300" alt="Project 3" class="projects__img">
+                        <div class="projects__modal">
+                            <h3 class="projects__title">UI Kit</h3>
+                            <p class="projects__description">Component library with custom design system</p>
+                            <div class="projects__buttons">
+                                <a href="#" class="button button--small">Demo</a>
+                                <a href="#" class="button button--small button--ghost">Code</a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="projects__card reveal" data-category="web">
+                        <img src="https://via.placeholder.com/400x300" alt="Project 4" class="projects__img">
+                        <div class="projects__modal">
+                            <h3 class="projects__title">Restaurant Website</h3>
+                            <p class="projects__description">Modern website with online reservation system</p>
+                            <div class="projects__buttons">
+                                <a href="#" class="button button--small">Demo</a>
+                                <a href="#" class="button button--small button--ghost">Code</a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="projects__card reveal" data-category="app">
+                        <img src="https://via.placeholder.com/400x300" alt="Project 5" class="projects__img">
+                        <div class="projects__modal">
+                            <h3 class="projects__title">Weather App</h3>
+                            <p class="projects__description">Weather forecasting application with geolocation</p>
+                            <div class="projects__buttons">
+                                <a href="#" class="button button--small">Demo</a>
+                                <a href="#" class="button button--small button--ghost">Code</a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="projects__card reveal" data-category="design">
+                        <img src="https://via.placeholder.com/400x300" alt="Project 6" class="projects__img">
+                        <div class="projects__modal">
+                            <h3 class="projects__title">Portfolio Template</h3>
+                            <p class="projects__description">Customizable portfolio template for developers</p>
+                            <div class="projects__buttons">
+                                <a href="#" class="button button--small">Demo</a>
+                                <a href="#" class="button button--small button--ghost">Code</a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about section" id="about">
+            <div class="about__container container">
+                <h2 class="section__title reveal">About Me</h2>
+                
+                <div class="about__content">
+                    <div class="about__data reveal">
+                        <p class="about__description">
+                            I am a passionate web developer with a keen interest in creating intuitive and responsive web applications. 
+                            With a strong foundation in front-end technologies and a growing expertise in back-end development, 
+                            I strive to build seamless digital experiences that solve real-world problems.
+                        </p>
+                        <p class="about__description">
+                            My journey in web development began during my college years when I discovered the power of transforming ideas into interactive websites. 
+                            Since then, I've been continuously learning and improving my skills to stay current with industry trends and best practices.
+                        </p>
+                        
+                        <a href="#" class="button">Download CV</a>
+                    </div>
+                    
+                    <div class="about__skills reveal">
+                        <h3 class="about__skills-title">Skills</h3>
+                        
+                        <div class="skills__content">
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">HTML</h3>
+                                    <span class="skills__number">90%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage" style="width: 90%"></span>
+                                </div>
+                            </div>
+                            
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">CSS</h3>
+                                    <span class="skills__number">85%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage" style="width: 85%"></span>
+                                </div>
+                            </div>
+                            
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">JavaScript</h3>
+                                    <span class="skills__number">80%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage" style="width: 80%"></span>
+                                </div>
+                            </div>
+                            
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">React</h3>
+                                    <span class="skills__number">75%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage" style="width: 75%"></span>
+                                </div>
+                            </div>
+                            
+                            <div class="skills__data">
+                                <div class="skills__titles">
+                                    <h3 class="skills__name">Node.js</h3>
+                                    <span class="skills__number">70%</span>
+                                </div>
+                                <div class="skills__bar">
+                                    <span class="skills__percentage" style="width: 70%"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact section" id="contact">
+            <div class="contact__container container">
+                <h2 class="section__title reveal">Contact Me</h2>
+                <p class="section__description reveal">Get in touch for collaborations or inquiries</p>
+                
+                <div class="contact__content">
+                    <div class="contact__info reveal">
+                        <div class="contact__card">
+                            <i class="fas fa-envelope contact__card-icon"></i>
+                            <h3 class="contact__card-title">Email</h3>
+                            <span class="contact__card-data">example@email.com</span>
+                            <a href="mailto:example@email.com" class="contact__button">
+                                Write me <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                        
+                        <div class="contact__card">
+                            <i class="fab fa-whatsapp contact__card-icon"></i>
+                            <h3 class="contact__card-title">WhatsApp</h3>
+                            <span class="contact__card-data">+123 456 7890</span>
+                            <a href="https://api.whatsapp.com/send?phone=1234567890" class="contact__button">
+                                Message me <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                        
+                        <div class="contact__card">
+                            <i class="fab fa-linkedin contact__card-icon"></i>
+                            <h3 class="contact__card-title">LinkedIn</h3>
+                            <span class="contact__card-data">linkedin.com/in/yourusername</span>
+                            <a href="https://linkedin.com/in/yourusername" class="contact__button">
+                                Connect <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact__form-container reveal">
+                        <form action="#" class="contact__form">
+                            <div class="contact__form-group">
+                                <label for="name" class="contact__form-label">Name</label>
+                                <input type="text" id="name" class="contact__form-input" placeholder="Your Name" required>
+                            </div>
+                            
+                            <div class="contact__form-group">
+                                <label for="email" class="contact__form-label">Email</label>
+                                <input type="email" id="email" class="contact__form-input" placeholder="Your Email" required>
+                            </div>
+                            
+                            <div class="contact__form-group">
+                                <label for="message" class="contact__form-label">Message</label>
+                                <textarea id="message" class="contact__form-input contact__form-textarea" placeholder="Your Message" required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="button">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__container container">
+            <div class="footer__content">
+                <div class="footer__info">
+                    <h3 class="footer__title">Portfolio</h3>
+                    <p class="footer__description">
+                        Creating meaningful digital experiences through code and design.
+                    </p>
+                </div>
+                
+                <div class="footer__links">
+                    <h3 class="footer__title">Navigation</h3>
+                    <ul class="footer__list">
+                        <li><a href="#home" class="footer__link">Home</a></li>
+                        <li><a href="#featured" class="footer__link">Featured</a></li>
+                        <li><a href="#projects" class="footer__link">Projects</a></li>
+                        <li><a href="#quizzes" class="footer__link">Quizzes</a></li>
+                        <li><a href="#about" class="footer__link">About</a></li>
+                        <li><a href="#contact" class="footer__link">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__social">
+                    <h3 class="footer__title">Social</h3>
+                    <div class="footer__social-links">
+                        <a href="https://github.com/JSTNE30" target="_blank" class="footer__social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="footer__social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="footer__social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="footer__social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer__copy">
+                <p>&copy; 2025 Your Name. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll Up Button -->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="fas fa-arrow-up scrollup__icon"></i>
+    </a>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
