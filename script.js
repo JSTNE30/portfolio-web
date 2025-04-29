@@ -1,4 +1,3 @@
-/*=============== PRELOADER ===============*/
 window.addEventListener('load', () => {
     const preloader = document.querySelector('.preloader');
     setTimeout(() => {
@@ -6,26 +5,22 @@ window.addEventListener('load', () => {
     }, 1000);
 });
 
-/*=============== MENU SHOW Y HIDDEN ===============*/
 const navMenu = document.getElementById('nav-menu'),
       navToggle = document.getElementById('nav-toggle'),
       navClose = document.getElementById('nav-close');
 
-/*===== MENU SHOW =====*/
 if (navToggle) {
     navToggle.addEventListener('click', () => {
         navMenu.classList.add('show-menu');
     });
 }
 
-/*===== MENU HIDDEN =====*/
 if (navClose) {
     navClose.addEventListener('click', () => {
         navMenu.classList.remove('show-menu');
     });
 }
 
-/*=============== REMOVE MENU MOBILE ===============*/
 const navLinks = document.querySelectorAll('.nav__link');
 
 function linkAction() {
@@ -35,7 +30,6 @@ function linkAction() {
 }
 navLinks.forEach(n => n.addEventListener('click', linkAction));
 
-/*=============== CHANGE BACKGROUND HEADER ===============*/
 function scrollHeader() {
     const header = document.getElementById('header');
     // When the scroll is greater than 80 viewport height, add the scroll-header class to the header tag
@@ -43,7 +37,6 @@ function scrollHeader() {
 }
 window.addEventListener('scroll', scrollHeader);
 
-/*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 const sections = document.querySelectorAll('section[id]');
 
 function scrollActive() {
@@ -63,7 +56,6 @@ function scrollActive() {
 }
 window.addEventListener('scroll', scrollActive);
 
-/*=============== SHOW SCROLL UP ===============*/
 function scrollUp() {
     const scrollUp = document.getElementById('scroll-up');
     // When the scroll is higher than 560 viewport height, add the show-scroll class to the a tag with the scroll-up class
@@ -71,7 +63,6 @@ function scrollUp() {
 }
 window.addEventListener('scroll', scrollUp);
 
-/*=============== SKILLS ANIMATION ===============*/
 const skillBars = document.querySelectorAll('.skills__percentage');
 
 function animateSkills() {
@@ -81,7 +72,6 @@ function animateSkills() {
     });
 }
 
-/*=============== SCROLL REVEAL ANIMATION ===============*/
 function reveal() {
     const reveals = document.querySelectorAll('.reveal');
     
@@ -109,7 +99,6 @@ function reveal() {
 window.addEventListener('scroll', reveal);
 window.addEventListener('load', reveal);
 
-/*=============== PROJECTS FILTER ===============*/
 const filterButtons = document.querySelectorAll('.projects__filter');
 const projectCards = document.querySelectorAll('.projects__card');
 
@@ -151,7 +140,6 @@ filterButtons.forEach(button => {
     button.addEventListener('click', filterProjects);
 });
 
-/*=============== FORM SUBMISSION ===============*/
 const contactForm = document.querySelector('.contact__form');
 
 if (contactForm) {
@@ -174,8 +162,6 @@ if (contactForm) {
     });
 }
 
-/*=============== INITIALIZE ===============*/
-// Initial reveal call to show elements that are already in viewport on page load
 document.addEventListener('DOMContentLoaded', () => {
     reveal();
 });
